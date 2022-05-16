@@ -49,3 +49,5 @@ const or = orange(s, t, b, oranges);
 console.log(
   `Foram ${quantityApples} maçãs que caíram na região da casa e ${quantityOranges} laranjas que também caíram na região da casa`
 );
+
+
