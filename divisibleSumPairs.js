@@ -12,7 +12,9 @@ function divisibleSumPairs(n, d) {
       }
     }
   }
-  console.log(quantity);
+  console.log(quantity)
+  return quantity  
+  
 }
 
 divisibleSumPairs(numbers, divisorNumber);
