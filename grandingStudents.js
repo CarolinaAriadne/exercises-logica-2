@@ -1,38 +1,18 @@
-let arrayNotas = [2, 37, 38];
+let arrayNotas = [73, 67, 38, 33];
 
-function grandingStudentes(notas) {
-  //   let numbersRounded = [];
+function grandingStudentes(grades) {
 
-  //   for (let index = 0; index < notas.length; index += 1) {
-  //     if (notas[index] < 38 && notas[index] % 5 == 0) {
-  //       numbersRounded.push(notas[index]);
-  //     }
+  for (let index = 0; index < grades.length; index += 1) {
+    if (grades[index] >= 38) {
+      if (grades[index] % 5 === 3) {
+        grades[index] += 2;
+      } else if (grades[index] % 5 === 4) {
+        grades[index] += 1;
+      };
+    };
+  };
 
-  //     
-  //       let multiplesFive = Math.ceil(notas[index] / 5) * 5;
-
-  //       let subtraction = multiplesFive - notas[index];
-  //       if (subtraction < 3) {
-  //         numbersRounded.push(multiplesFive);
-  //       } else {
-  //         numbersRounded.push(notas[index]);
-  //       }
-  //     }
-  //   }
-
-  //   return numbersRounded;
-
-  for (let index = 0; index < notas.length; index += 1) {
-    if (notas[index] >= 38) {
-      if (notas[index] % 5 === 3) {
-        notas[index] += 2;
-      }
-    } else if (notas[index] % 5 === 4) {
-      notas[index] += 1;
-    }
-  }
-
-  return notas;
-}
+  return grades;
+};
 
 console.log(grandingStudentes(arrayNotas));
