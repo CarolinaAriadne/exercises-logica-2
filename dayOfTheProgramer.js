@@ -1,7 +1,8 @@
 let arrayBissexto = [31, 29, 31, 30, 31, 30, 31, 31];
 let arrayNaoBissexto = [31, 28, 31, 30, 31, 30, 31, 31];
 let dayProgramerYear = 256;
-let year = 2022;
+let dataAtual = new Date();
+let year = dataAtual.getFullYear();
 let anoBissexto = false;
 
 function verifyDateInvalide(y) {
@@ -45,5 +46,4 @@ function verifyDateProgramer() {
 
     console.log(`${dayProgramer2}.09.${year}`);
   }
-};
-
+}
