@@ -1,1 +1,1 @@
-# Exercicios Hackerrank.
+# Exercícios Hackerrank.
